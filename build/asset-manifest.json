@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.25becc1c.css",
+    "main.js": "/static/js/main.24917e73.js",
+    "static/media/HIVELOGO.png": "/static/media/HIVELOGO.0d86c1a63ef5f247c4c1.png",
+    "static/media/HIVELOGO(2).png": "/static/media/HIVELOGO(2).740c502dbc12363ce78f.png",
+    "index.html": "/index.html",
+    "main.25becc1c.css.map": "/static/css/main.25becc1c.css.map",
+    "main.24917e73.js.map": "/static/js/main.24917e73.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.25becc1c.css",
+    "static/js/main.24917e73.js"
+  ]
+}

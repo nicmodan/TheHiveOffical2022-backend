@@ -19,7 +19,7 @@ mongoose.connect(config.MONGODB_URL).then(()=>{
 
 
 app.use(cros())
-// app.use(express.static("build"))
+app.use(express.static("build"))
 app.use(express.json())
 app.use(middleware.requestLogger)
 
