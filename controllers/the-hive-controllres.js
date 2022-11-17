@@ -1,15 +1,15 @@
-const thehiveRouter = require("express").Router()
-const theHiveCatlog = require("../models/the-hive-catlog")
+const hivePrintsRouter = require("express").Router()
+const HivePrintOrders = require("../models/the-hive-catlog") // require("../models/hive-shiping-order-model")
 
 
-thehiveRouter.get("/", async (request, response)=>{
-    const res = await theHiveCatlog.find({})
+hivePrintsRouter.get("/", async (request, response)=>{
+    const res = await HivePrintOrders.find({})
     response.json(res)
 })
 
-thehiveRouter.get("/:id", async (request, response)=>{
+hivePrintsRouter.get("/:id", async (request, response)=>{
     const id = request.params.id
-    const res = await theHiveCatlog.find({id})
+    const res = await HivePrintOrders.find({id})
     if(res){
         response.json(res)
     }else{
@@ -18,4 +18,4 @@ thehiveRouter.get("/:id", async (request, response)=>{
     
 })
 
-module.exports = thehiveRouter
+module.exports = hivePrintsRouter
